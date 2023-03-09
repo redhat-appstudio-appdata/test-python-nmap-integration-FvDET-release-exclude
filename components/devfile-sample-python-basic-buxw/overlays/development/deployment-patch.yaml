@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-buxw
+  namespace: lpardo-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:ae95046eb5fd24271fad306524b97c744d7f3d5d28dbebe35ffe69c40fa1d851
+        name: my-python
+        resources: {}
+status: {}
